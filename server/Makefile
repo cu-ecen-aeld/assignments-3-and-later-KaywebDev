@@ -1,6 +1,6 @@
 CC ?= gcc
-CFLAGS ?= -g -Wall -Werror -Wextra
-LDFLAGS ?=
+CFLAGS ?= -g -Wall -Werror -Wextra -pthread
+LDFLAGS ?= -pthread
 
 CROSS_COMPILE ?=
 CC := $(CROSS_COMPILE)$(CC)
